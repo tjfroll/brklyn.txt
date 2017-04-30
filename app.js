@@ -105,7 +105,8 @@ const music = [
   [6, 'the sound bounces and echoes in every direction'],
   [10, 'becoming louder as it passes'],
   [15, ', then, fainter'],
-  [19, 'until it is inaudible']
+  [19, 'until it is inaudible'],
+  [23]
 ]
 const honk = [
   [0, 'a car honks repeatedly'],
