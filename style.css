@@ -1,0 +1,88 @@
+* {
+  font-family: Palatino Linotype, Georgia, Times New Roman, serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: #777;
+  color: #EFEFEF;
+  padding: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+p span:not(.punctuation), p span:not(:first-child) {
+  padding-left: .2rem;
+}
+
+p span + .punctuation {
+  padding: 0;
+}
+
+.event {
+  opacity: 0;
+  transition: opacity 1s, font-size 1s, height 1s;
+}
+
+span.event {
+  // font-size: .5rem;
+}
+span.event.visible {
+  font-size: 1rem;
+}
+
+p.event {
+  height: .05rem;
+}
+p.event.visible {
+  height: 1.3rem;
+}
+
+.event.visible {
+  opacity: 1;
+}
+
+.tiny {
+  font-size: .7rem;
+}
+
+.small {
+  font-size: .9rem;
+}
+
+.large {
+  font-size: 2rem;
+}
+
+.noun {
+  color: orange;
+  font-size: 1.3rem;
+}
+
+.verb {
+  color: skyblue;
+}
+
+.punctuation {
+  margin-left: -.1rem;
+}
+
+input {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3rem;
+  padding: 2rem;
+  background-color: rgba(50, 50, 50, 50);
+  border-color: #111;
+  outline: none;
+  color: #FFF;
+  font-size: 3rem;
+}
