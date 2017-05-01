@@ -2,20 +2,20 @@ const container = append(document.body,
   new Div('.text')
 )
 
-const input = append(document.body,
-  new Input('.input', {
-    type: 'text',
-    autofocus: 'autofocus',
-    placeholder: 'look',
-    onkeypress: (e) => {
-      if (e.keyCode === 13) {
-        empty(container)
-        execute(input.value)
-        input.value = ''
-      }
-    }
-  })
-)
+// const input = append(document.body,
+//   new Input('.input', {
+//     type: 'text',
+//     autofocus: 'autofocus',
+//     placeholder: 'look',
+//     onkeypress: (e) => {
+//       if (e.keyCode === 13) {
+//         empty(container)
+//         execute(input.value)
+//         input.value = ''
+//       }
+//     }
+//   })
+// )
 
 const execute = (command) => {
   if (command === 'look') {
@@ -61,7 +61,11 @@ const dictionary = {
   screeches: 'verb',
   still: 'verb',
   papers: 'noun',
-  rustle: 'verb'
+  rustle: 'verb',
+  cop: 'noun',
+  whistles: 'verb',
+  pedestrians: 'noun',
+  couple: 'noun'
 }
 
 const car = [
@@ -116,7 +120,7 @@ const honk = [
   [20]
 ]
 const whistle = [
-  [0, 'a traffic cop whistles at oncoming traffice'],
+  [0, 'a traffic cop whistles at oncoming traffic'],
   [3, ', holding one arm out to stop a lane'],
   [7, ', waving pedestrians on'],
   [10]
